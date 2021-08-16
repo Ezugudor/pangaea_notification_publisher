@@ -1,4 +1,4 @@
-# Raffle Draw Backend (API)
+# Pub/Sub Notification System (Publisher)(API)
 
 [![Build Status](https://travis-ci.org/laravel/lumen-framework.svg)](https://travis-ci.org/laravel/lumen-framework)
 [![Total Downloads](https://poser.pugx.org/laravel/lumen-framework/d/total.svg)](https://packagist.org/packages/laravel/lumen-framework)
