@@ -1,0 +1,91 @@
+{
+	"info": {
+		"_postman_id": "67777d0a-c2fd-46fd-91df-1df2a37f65dd",
+		"name": "Notification System",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Subscribe",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"url\": \"http://subscriber.pangaea/api\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/subscribe/istes",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"subscribe",
+						"istes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Publish",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"url\": \"http://google.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/publish/istes",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"publish",
+						"istes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Receiver",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"topic\": \"hahaha aada\",\n    \"data\":{\n        \"essage\":\"jfjsfsf\"\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://subscriber.pangaea/api",
+					"protocol": "http",
+					"host": [
+						"subscriber",
+						"pangaea"
+					],
+					"path": [
+						"api"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
